@@ -1,0 +1,64 @@
+4.2 how funtions communicate 
+
+funtions use parameters to make them very flexible and get input from the outside world.
+
+how does it work: you define any number of parameters you want. you then pass in arguments to the funtions.
+
+you can use positiional arguments or named arguments. Posotional arhuments musnt come after named arguments like so:
+
+my_funtions(a = 7, 4, 3) -> this will cuase an error.
+
+Conversely you can also use default values for parameters and then their counterpart argumebt can be ommited like so:
+
+def my_f(a= 7, b=5)
+    ptint(a + b)
+
+my_f() -> this will print 12
+
+but you cam also call it as:
+
+my_f(5, b=2)
+my_f(3,1)
+my_f(b=12, a = 14)
+
+you cannot call it as
+
+my_f(b=12, 14) for example, because positiional arguments cannot come after named arguments.
+
+Btw, lets make the clear distionction betrween the terms parameter and arguments:
+
+parameters are part of the funtions defintion.
+
+Parameters live only inside the body of the funtion and then they dissapear.
+
+Arguments however are what is passed in to the funtion.
+
+One more concept to remember:
+
+you can have a parameter name a for example and also have this variable in your code. this will work justr fine and it is called shadowing
+
+take a look at this:
+
+def my_f(a)
+    print (a)
+
+
+a  =  6
+my_f(12)
+
+what i guess happens is my initial variable a is shadowed inside the funtion, like normally i would be able to use it, but because the parameter is also called a, then a is the parameter, and my earlier variable is "shadowed" and cannot be accessed. like this for example:
+
+def my_f(a):
+    print (a)
+    print (b)
+
+
+a  =  6
+b = 13
+my_f(12)
+
+
+this will print:
+
+12
+13
