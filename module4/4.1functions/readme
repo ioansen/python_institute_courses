@@ -1,0 +1,28 @@
+4.1 funtions
+
+in this module we learned about python funtions.
+
+
+first we discussed why we might use funtions and there are 3 main reasons:
+
+1. to deduplicate code: this is very important, because although we can use copy pasta to duplicate it easily, imagine your boss asks you to change that piece of code. This could turn into a rather tedious endevour, not only that makes the situation a lot more error prone
+2. when your code is to large and it becomes harder to understand and debug. breaking your logic into seperate funtions makes a lot more sense and makes your code easier to read, understand, debug and code
+3. have we mentioned testing? this one is super important, at least to me, break your code into easy funtions and you will be able to test and debug easyly
+4. imagine you and a coworker are working on the same program. you can logically divide the work between yourselves and use funtions
+
+Anyway, enough of that, we are convinced already. what else did we learn?
+
+we learned how to invoke a funtion. we use the keyword def <name_of_funtion>(): and semicolon. the name_of_funtion obbeys the same rules as variables. (dont start with a letter and dont have spaces). Good, then the body of the funtions is indented. every funtion needs to have at least one statement.
+
+The funtion must happen before we invoke it, othwewise a nameerror will show up. remember, python reads the file top to bottom so it wont know about your funtions unless it read it before. This doesnt mean all funtions need to be at the begining of the file, no sir, it just means that they need to happen before you invoke them. this will work just fine:
+
+print("yolo")
+
+def myf():
+    print("2")
+
+myf()
+
+A bit strange but whatever.
+
+I guess that is it. Go with god and cheers!
