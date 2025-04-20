@@ -1,0 +1,19 @@
+in this lesson we learned that funtions can have a return statement.
+
+when you dont use a return statement it is like you terminated the function using the return command without anything.
+
+there are 2 ways to invoke the return command. As is or followed by an expression.
+
+when you follow it by an expression the funtions effectively act as as value (the value of that expression) that you can pass freely in your code as if it where a funtion. for example assign it as:
+
+def my_f():
+    return 4
+
+a = my_f() # a will become 4
+
+
+when you dont follow the return with an expression the None type is return, None is a special keyword and type in python and means "nothing".
+
+Lists can be used as parameters in a funtion and as return expressions with no issues whatsoever.
+
+You can choose not to use the funtions result value and that is fine too, there is no penalty for that, just the contentment that the funtions result is lost forever and may never, never, never, ca be retrieved ever again, its just gone, foreever.
