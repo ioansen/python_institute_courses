@@ -1,0 +1,77 @@
+in this lesson we learned about tuples.
+
+there is a lot to unpack so lets see how much we can remember:
+
+Tuples:
+
+tuples are like lists but are immutable, this means you can read from them same as lists, but you cannout change them as in:
+
+tupl[3] = 4
+tupl.append(4)
+tupl.extend(5)
+
+these will all give errors
+
+you can however create a new tuple by concatenating 2 tuples between them or using the * syntax as in
+
+tupl = (1,)
+
+tupl = tupl + (2, 3) # tupl will be 1,2,3
+tupl = tupl * 3 # tupl will be 1, 1, 1
+
+You can create a tuple same as a list but using round brackets instead of square. you can also omit the brackets.
+
+If you want to create a one element tuple use a comma after the element, otherwise you will create a non-tuple simple vareiable.
+
+You can also create an empty tuple like so () or use the tuple funtion to create a tuple or convert a seuqence to a tuple.
+
+The nice thing about tuples is that they can be use on the left side of an assignment as we saw previously when we were swapping values.
+
+This can add a lot of elegancy to the code, and as you saw we can use vairables inside tuples
+
+a, b = 1, 2
+
+this is what i am talking about
+
+you can del the tuple using the del
+
+tuples also have the methid count which counts the number of occurences of an elemnt inside the tuple
+
+
+Dicitionaries:
+
+Dictionaries are cool too. They are literally like dictionaries. They are pairs of key value,
+
+the key can be any imuutable object, while value can be anything
+
+a value cannot exist without a key
+
+dictionaries are mutable.
+
+to change a dictionary value, simply assign the key to another value
+
+to add a new dictionary key-value pair assign a non-existing key to a value. this is different than lists where trying to assign a non-existing index would cause an error
+
+ductionaries are not sequences so they cannot be used in the for construction. however we have 3 vaery useful funtions that allow us to iterate through dictionaries:
+
+keys - returns a sequence of keys
+items - returns a sequence of key-value pairs
+values - returns a sequence of values
+
+you can get a value by holdng its key, you cannot get a key by holding its value.
+
+keys are unique inside a dictionary while values arent.
+
+what else should we know?
+
+idk
+
+there is also the dict funtion which creates a dict and can be used to chnage data from like a tuple to dictionary for example.
+
+other methods maybe you should know are
+
+update, which adds an element to a dictionary or popitem which deleltes the last item in a dictionary
+
+dictionaries used to be unordered but since python 3.6 they are ordered so popitem will delete the last, before 3.6 a random item was being deleted.
+
+cheers, try to have a go with them and you will be fine

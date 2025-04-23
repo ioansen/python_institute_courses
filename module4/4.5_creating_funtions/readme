@@ -1,0 +1,7 @@
+one interesting thing about funtions is that they can call themselves.
+
+these aer called recursiuve funtions. all recrusive funtions need a testing condition to end, otherwise they may run in an endless loop and give the maximum recursion depth exceeded error.
+
+the recursive funtions can make the code much more clean and intuitive but among disadvatages we have the fact that they consume a lot of memory and sometimes harder to code (easier to make mistakes).
+
+Take a look at the recursion.py for some examples of recursive functions

@@ -1,0 +1,5 @@
+1. a variable created inside a funtion lives only inside the funtion
+2. a variable created outside a funtion lives in all the funtions as well
+3. if you try to modify a variable created outside a funtion inside a funtion you will create a new variable with the same name that has the scope only in the funtion, while the one created outside it is shadowed. you can basically not assign it
+4. you can actually asign it if you declate it inside the funtion with the keyword word global, then you can assign it
+5. with lists, is sort of the same, if you assign the list, a new list is created, however if you modify the list, the outside list is modified as well
