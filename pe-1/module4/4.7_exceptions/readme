@@ -1,0 +1,42 @@
+about exceptions
+
+again, there is a lot to unpack here, lets get going
+
+as you might of seen, the code you create might have errors in it.
+
+a simple prgram such as asking the user for a number and then returnning the inverse of that number may seem harmless but can actually cause errors.
+
+to provide a good user experience, instead of allowing the default error mechanism which imidietly interupts the program and provides the trace and the error there is another way that provides a better ux. it is the try-except block
+
+we could also use ifs and type to test if there are errors but this is not the recommended way, the python recommended way is to use try-except blocks. basically allow the exceptions to happen and then dealing with them, rather than trying to verify for all exceptions. "Better ask for forgiveness instead of permission".
+
+now, lets run through the try-except syntax and explain what it does. Any exception that happens in the try block will cause the execution to jump to the except block, then the execution continues normally. bsaically try to put the risky code in the try block and in the except clause clean up the mess.
+
+you can also have multiple except brnaches that jump there when specific exceptions happen, you can also use multiple exceptions in the same except branch by providing them in a tuple
+
+lets iterate some of the more common exceptions:
+
+- zerodivisionerror - happens when you divide with 0. more operatos can make this happen: /, //, %
+- valueerror - when the data is of the correct type but doesnt work, like calling int(string), if the string doesnt convert to in
+- typeerror - when python expects a different type in the expression
+- attributeerror - when an object doesnt have the attribute you are calling for
+- sytaxerror - this is when your python syntax is not correct, never handle this sort of errors with try-except blocks
+- keyboardinterrupterror - when ctrl-c during execution
+
+
+ok, a note on debuggin. the term comes from the fact that in the old days, bugs were entering computers and were causing programs to behave weirdly. in such cases one had to take the bugs out of the computer, literally.
+
+anyway
+
+bugs are normal nowadays and you shouldnt be too upset about them but rather happy, a bug found now will save your ass later.
+
+you should try and test all executions paths before shipping your code. python is an interepreted language and he wont verify your code, not even your syntax before running and will only run into issues when attempting to execute the line. this is why it is important to test all your path execution brancehs before shipping
+
+now, how to debug?
+
+1. use a debugger most ides come with a specilized debugger that lets you go through the code one line at a time and inspect variables
+2. print debugging 
+3. ruber duck debugging - explain your code to someone, if you cant find a person, use a rubber duck, this activates a part of the brain that is not active whilst coding
+4. take a break, come back later, you will be surprised
+
+one other thing to mention is that python provides the unittest module that provides unit testing capabilities. this is a coding philosophy and there is a special course on it on python institute. the method suggets that all coding needs to start from the testing part and on every modificatiopn all suits of tests need to be run.
